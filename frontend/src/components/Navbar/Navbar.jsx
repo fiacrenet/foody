@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import '../../styles/Navbar.css'
 import { assets } from '../../assets/assets'
 
-export default function Navbar() {
+
+const Navbar = () => {
 
   const [menu, setMenu] = useState('home');
   return (
@@ -18,7 +19,9 @@ export default function Navbar() {
         <img src={assets.search_icon} alt="search icon"/>
         <div className="navbar-search-icon">
           <img src={assets.basket_icon} alt="" />
-          <div className="dot"></div>
+          <div className="dot">
+            
+          </div>
         </div>
         <button type="submit">Sign up</button>
       </div>
@@ -26,3 +29,6 @@ export default function Navbar() {
     </div>
   )
 }
+
+
+export default Navbar
