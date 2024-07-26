@@ -21,8 +21,7 @@ const FoodDisplay = ({category}) => {
                   price={item.price}
                   image={item.image}
                   />
-                }
-                
+                } 
             })}
         </div>    
     </div>
